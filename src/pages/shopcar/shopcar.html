@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>购物车(1)</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-row class="shop_row">
+        <ion-col col-1 text-end align-self-center>
+            <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+        </ion-col>
+        <ion-col col-9>
+            <ion-row>
+                <ion-col col-4 align-self-center>
+                    <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=850054952,2494919120&fm=27&gp=0.jpg" alt="">
+                </ion-col>
+                <ion-col col-8>
+                    <ion-row>
+                        <ion-col col-12 no-padding>雪域牛乳芝士蛋糕</ion-col>
+                        <ion-col col-12 no-padding>Le Cheesecake</ion-col>
+                        <ion-col col-12 no-padding>2-4人食</ion-col>
+                        <ion-col col-12 no-padding>￥216.5</ion-col>
+                    </ion-row>
+                </ion-col>
+            </ion-row>
+        </ion-col>
+        <ion-col col-2 text-end align-self-center>
+            <button class="compile" (click)="Compile()">编辑</button>
+        </ion-col>
+    </ion-row>
+    <div class="account">
+        <ion-item>
+            <ion-label>全选</ion-label>
+            <ion-checkbox [(ngModel)]="pr"></ion-checkbox>
+            <ion-label class="sign a">￥</ion-label>
+            <ion-label class="price a">200.2</ion-label>
+            <ion-label class="setl a"><button>结算</button></ion-label>
+        </ion-item>
+    </div>
+    <button (click)="call()">惦记我我</button>
+</ion-content>

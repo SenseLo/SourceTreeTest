@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons>
+            <button ion-button (click)="dismiss()">关闭</button>
+        </ion-buttons>
+        <ion-title>收货地址管理</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-row class="location_detai" tappable (click)=popTo(item) *ngFor="let item of Location">
+        <ion-col col-4>{{item.userName}}</ion-col>
+        <ion-col col-8>{{item.userPhone}}</ion-col>
+        <ion-col style="border-bottom:1px solid #ddd;">{{item.cityName}}{{item.detailAdress}}{{item.adressFloor}}</ion-col>
+        <ion-col col-12 text-end>
+            <span tappable style="margin-right:1rem;">编辑</span>
+            <span tappable>删除</span>
+        </ion-col>
+    </ion-row>
+    <div class="footer">
+        <button (click)="Address()">+添加新地址</button>
+    </div>
+</ion-content>

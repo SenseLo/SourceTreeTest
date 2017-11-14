@@ -1,0 +1,55 @@
+page-home {
+    .men {
+        position: absolute;
+        left: .5rem;
+        top: .5rem;
+        z-index: 10;
+        font-size: 2.7em;
+        margin-left: 1rem;
+    }
+    .slide_box {
+        height: 150px;
+        ion-slide {
+            img {
+                height: 150px;
+            }
+        }
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                border: 1px solid white;
+            }
+            .swiper-pagination-bullet-active {
+                background-color: white;
+            }
+        }
+    }
+    .slogan {
+        margin: 1rem;
+        border-top: 1px solid #8c7d5c;
+        h1 {
+            font-weight: normal;
+            margin: auto;
+            color: #8c7d5c;
+            text-align: center;
+            font-size: 1.3rem;
+            padding-top: 1rem;
+        }
+    }
+    .cake_list {
+        .describe {
+            font-size: 1.2rem;
+            span {
+                float: right;
+                width: 14px;
+                height: 14px;
+                background: red;
+                border-radius: 2px;
+                border: 1px solid red;
+                font-size: 1.4rem;
+                text-align: center;
+                color: white;
+                line-height: 14px;
+            }
+        }
+    }
+}

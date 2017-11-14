@@ -1,0 +1,78 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            确认订单
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div class="hint">
+        请选择正确的地址，因地址产生误差产生的运费，小诺及时与你联系
+    </div>
+    <div class="distribution_chose">
+
+        <button ion-item (click)="goLocation()" class="fo"> <i class="iconfont icon-fahuoguanli"></i>请选择配送地址</button>
+        <button ion-item (click)="handler()" class="fo"> 
+            <ion-label>请选择配送时间:</ion-label>
+            <ion-datetime displayFormat="YYYY-MM-DD HH:mm "  [(ngModel)]="myDate" cancelText="取消" doneText="确认"></ion-datetime>
+        </button>
+        <ion-row class="chos margin">
+            <ion-col class="url" co-3 [style.background-image]="'url(http://imagecdn.lecake.com/postsystem/docroot/images/goods/201709/15613/display_15613_72086.jpg)'"></ion-col>
+            <ion-col co-9>
+                <ion-row>
+                    <ion-col col-8>雪域牛乳芝士蛋糕</ion-col>
+                    <ion-col col-4 text-end>198.00</ion-col>
+                    <ion-col col-8>Le Cheesecake</ion-col>
+                    <ion-col col-4 text-end>×1</ion-col>
+                    <ion-col col-12>2-4人食</ion-col>
+                    <ion-col col-4><i class="iconfont icon-chazi" style="font-size:22px;"></i></ion-col>
+                    <ion-col col-8>
+                        <ion-checkbox class="chex"></ion-checkbox>切分
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+        <button ion-item class="cake_pai fo">蛋糕牌：<span>免费制作</span></button>
+        <button ion-item class="fo">收费配件：</button>
+    </div>
+    <div class="margin">
+        <button ion-item class="fo">发票信息：</button>
+        <button ion-item class="fo">优惠卡卷：</button>
+    </div>
+    <div class="paying margin">
+        <ion-item>支付方式</ion-item>
+        <p>
+            <img src="assets/zhifu/yingangka.png" alt=""> 银行卡支付
+            <ion-checkbox [(ngModel)]="yinhangka"></ion-checkbox>
+        </p>
+        <p>
+            <img src="assets/zhifu/wei-xin.png" alt=""> 微信支付
+            <ion-checkbox [(ngModel)]="weixin"></ion-checkbox>
+        </p>
+        <p>
+            <img src="assets/zhifu/zhifubao.png" alt=""> 支付宝支付
+            <ion-checkbox [(ngModel)]="zhifubao"></ion-checkbox>
+        </p>
+        <p>
+            <img src="assets/zhifu/xinyongka.png" alt="">交通信用卡支付
+            <ion-checkbox [(ngModel)]="xinyongka"></ion-checkbox>
+        </p>
+        <ion-row class="shop_money">
+            <ion-col col-8>商品金额</ion-col>
+            <ion-col col-4 text-end style="color:red;">￥218.00</ion-col>
+            <ion-col col-8>运费</ion-col>
+            <ion-col col-4 text-end style="color:red;">￥0.00</ion-col>
+            <ion-col col-8>优惠</ion-col>
+            <ion-col col-4 text-end style="color:red;">-￥0.00</ion-col>
+        </ion-row>
+    </div>
+    <div class="footer">
+        <ion-row>
+            <ion-col col-3 align-self-center>实付金额：</ion-col>
+            <ion-col col-4 align-self-center style="color:red;">￥218.00</ion-col>
+            <ion-col col-5 text-end align-self-center>
+                <button (click)="goJs()">去结算</button>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

@@ -1,0 +1,43 @@
+page-contact {
+    ion-content {
+        ion-list {
+            height: 150px;
+            width: 100%;
+            margin: .5rem 0 !important;
+            div {
+                height: 100%;
+                width: 100%;
+                ion-row {
+                    height: 100%;
+                    padding: 1rem;
+                    ion-col {
+                        padding: 0 !important;
+                    }
+                }
+                .detail ion-col:nth-child(1) {
+                    color: #363636;
+                    font-family: "FangSong_GB2312";
+                }
+                .detail ion-col:nth-child(2) {
+                    color: #1C1C1C;
+                    font-family: "YouYuan";
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
+                .detail ion-col:nth-child(3) {
+                    color: #CFCFCF;
+                    font-family: "FangSong_GB2312"
+                }
+                .detail ion-col:nth-child(4) {
+                    color: #CDAF95;
+                    font-family: "FangSong_GB2312";
+                    font-size: 1.7rem;
+                }
+                .detail ion-col:nth-child(5) {
+                    color: #CDAF95;
+                    font-family: "FangSong_GB2312";
+                }
+            }
+        }
+    }
+}

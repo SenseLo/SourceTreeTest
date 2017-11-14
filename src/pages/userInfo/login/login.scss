@@ -1,0 +1,27 @@
+page-login {
+    .scroll-content {
+        padding-bottom: 0!important;
+    }
+    .login_list {
+        ion-item {
+            ion-label {
+                i {
+                    font-size: 25px !important;
+                }
+            }
+        }
+        .loginBtn {
+            display: block;
+            height: 45px;
+            background: red;
+            border-radius: 4px;
+            width: 90%;
+            border: 1px solid red;
+            text-align: center;
+            color: #fff;
+            line-height: 45px;
+            margin: 2rem auto;
+            font-size: 1.7rem;
+        }
+    }
+}

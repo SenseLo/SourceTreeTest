@@ -1,0 +1,148 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{rate?.title}}</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div class="detail_box_top">
+        <ion-slides autoplay=1000 loop="true">
+            <ion-slide>
+                <img tappable [src]="rate?.img" class="slide-image" />
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <div>
+        <ion-row>
+            <ion-col col-6>
+                <ion-row>
+                    <ion-col col-12>{{rate?.title}}</ion-col>
+                    <ion-col col-12 style="color:#ddd;">{{rate?.english}}</ion-col>
+                    <ion-col col-12 style="color:red;">￥{{rate?.price}}</ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col col-6>
+                <ion-row>
+                    <ion-col col-12 text-end><i tappable (click)="Call()" class="iconfont icon-phone-copy" style="font-size:28px;"></i></ion-col>
+                    <ion-col col-12 text-end class="sweetness">甜度:
+                        <!-- <i class="iconfont icon-xin-copy"></i> -->
+                        <i class="iconfont icon-xin1-copy"></i>
+                        <i class="iconfont icon-xin-copy"></i>
+                        <i class="iconfont icon-xin-copy"></i>
+                        <i class="iconfont icon-xin-copy"></i>
+                        <i class="iconfont icon-xin-copy"></i>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+    </div>
+    <div class="center">
+        <ion-row>
+            <ion-col col-12>建议食用人数：</ion-col>
+            <ion-col col-12 class="chose">
+                <ion-segment [(ngModel)]="pet" color="dark">
+                    <ion-segment-button value="2-4">
+                        2-4人食
+                    </ion-segment-button>
+                    <ion-segment-button value="5-8">
+                        5-8人食
+                    </ion-segment-button>
+                    <ion-segment-button value="10-12">
+                        10-12人食
+                    </ion-segment-button>
+                    <ion-segment-button value="15-20">
+                        15-20人食
+                    </ion-segment-button>
+                </ion-segment>
+            </ion-col>
+        </ion-row>
+        <div style="padding:1rem 0;border-bottom:1px solid #ddd;">
+            <ion-row>
+                <ion-col col-4 text-center align-self-center>
+                    <i class="iconfont icon-kg"></i>约680.00g
+                </ion-col>
+                <ion-col col-4 text-center align-self-center>
+                    <i class="iconfont icon-chazi"></i>5套餐具
+                </ion-col>
+                <ion-col col-4 text-center align-self-center>
+                    <i class="iconfont icon-cm"></i>约13*13cm
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+    <div class="product">
+        <p>产品介绍</p>
+        <div class="kongge">
+            到过阿尔卑斯山脉勃朗峰才发现，白，其实就是这么纯粹。雪花忽聚忽散到过阿尔卑斯山脉勃朗峰才发现，白， 其实就是这么纯粹。雪花忽聚忽散到过阿尔卑斯山脉勃朗峰才发现，白， 其实就是这么纯粹。雪花忽聚忽散到 过阿尔卑斯山脉勃朗峰才发现，白，其实就是这么纯粹。雪花忽聚忽散，
+        </div>
+        <ion-row class="list">
+            <ion-col col-12 class="bord">
+                <ion-row>
+                    <ion-col col-4>食材配比</ion-col>
+                    <ion-col col-4>品牌</ion-col>
+                    <ion-col col-4>产地</ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col col-12 class="bord">
+                <ion-row>
+                    <ion-col col-4>无盐黄油</ion-col>
+                    <ion-col col-4>安佳</ion-col>
+                    <ion-col col-4>新西兰</ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col col-12 class="bord">
+                <ion-row>
+                    <ion-col col-4>白巧克力</ion-col>
+                    <ion-col col-4>Callebaut</ion-col>
+                    <ion-col col-4>比利时</ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col col-12 class="bord">
+                <ion-row>
+                    <ion-col col-4>芝士</ion-col>
+                    <ion-col col-4>NZMP</ion-col>
+                    <ion-col col-4>新西兰</ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col col-12 class="bord">
+                <ion-row>
+                    <ion-col col-4>淡奶油</ion-col>
+                    <ion-col col-4>安佳</ion-col>
+                    <ion-col col-4>新西兰</ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col col-12 class="bord">
+                <ion-row>
+                    <ion-col col-4>牛奶</ion-col>
+                    <ion-col col-4>得乐思/晨曦</ion-col>
+                    <ion-col col-4>法国/德国</ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+        <p>关于食用</p>
+        <h6>蛋糕口味:<span>芝士口味</span></h6>
+        <h6>适合人群:<span>大众</span></h6>
+        <h6>保鲜条件:<span>冷藏0~4摄氏度</span></h6>
+        <h6>推荐食用:<span>请收到蛋糕后2~3小时内食用</span></h6>
+        <h6>温情提示:<span>请收到蛋糕后2~3小时内食用</span></h6>
+    </div>
+    <div class="img_box">
+        <img src="http://www.lecake.com/postsystem/docroot/images/promotion/201704/奶油1.jpg" alt="">
+        <img src="http://www.lecake.com/postsystem/docroot/images/promotion/201704/xueyu 20170410143730.jpg" alt="">
+        <img src="http://www.lecake.com/postsystem/docroot/images/promotion/201704/雪域牛乳pcqiefen(1).jpg" alt="">
+    </div>
+    <div class="footer_shopcar">
+        <ion-row>
+            <ion-col col-1 text-center align-self-center><i class="iconfont icon-kefu"></i></ion-col>
+            <ion-col col-1 text-center align-self-center (click)="GoshopCar()" style="display:inline-flex;position:relative;z-index:10;">
+                <i class="iconfont icon-gouwuche3"></i>
+                <span class="num">{{num}}</span>
+            </ion-col>
+            <ion-col col-5 text-center align-self-center>
+                <button class="goShopCar" (click)="AddShopCar()">加入购物车</button>
+            </ion-col>
+            <ion-col col-5 text-center align-self-center>
+                <button (click)="Goshop()" class="goShop">立即购买</button>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

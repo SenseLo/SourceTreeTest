@@ -1,0 +1,115 @@
+    page-detail {
+        .detail_box_top {
+            width: 100%;
+            height: 150px;
+            ion-slides {
+                ion-slide {
+                    img {
+                        height: 150px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .sweetness {
+            font-size: 1.6rem;
+            padding-top: 1.5rem;
+            color: red;
+            i {
+                color: red;
+            }
+        }
+        .center {
+            ion-row {
+                .chose {
+                    border-bottom: 1px solid red;
+                    ion-segment {
+                        .segment-button {
+                            border: none;
+                        }
+                        .segment-button.segment-activated {
+                            color: red !important;
+                            background: #fff !important;
+                            border: 1px solid red;
+                            border-radius: 4px;
+                        }
+                        .segment-button {
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .product {
+            padding: .5rem;
+            p {
+                border-left: 6px solid red;
+                padding-left: .6rem;
+            }
+            .kongge {
+                text-indent: 2em;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 1rem;
+            }
+            .list {
+                .bord {
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+            h6 {
+                span {
+                    color: #8A8A8A;
+                    font-size: 1.4rem;
+                    padding-left: .4rem;
+                }
+            }
+        }
+        .img_box {
+            margin-bottom: 5rem;
+        }
+        .footer_shopcar {
+            height: 50px;
+            position: fixed;
+            bottom: 0;
+            border-top: 1px solid #ddd;
+            width: 100%;
+            background: #eee;
+            .num {
+                position: absolute;
+                top: 0;
+                left: 1.5rem;
+                border: 1px solid red;
+                border-radius: 50%;
+                background: red;
+                color: #fff;
+                padding: 0 0.3rem;
+            }
+            ion-row {
+                height: 100%;
+                ion-col {
+                    i {
+                        font-size: 28px;
+                    }
+                    button {
+                        display: block;
+                        margin: auto;
+                        border-radius: 6px;
+                        width: 90%;
+                        height: 42px;
+                        line-height: 42px;
+                        font-size: 1.8rem;
+                    }
+                    .goShopCar {
+                        background: #fff;
+                        border: 1px solid red;
+                        color: red;
+                    }
+                    .goShop {
+                        background: red;
+                        border: 1px solid red;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }

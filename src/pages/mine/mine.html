@@ -1,0 +1,94 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>我的</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div>
+        <ion-row class="UserIcon-box">
+            <ion-col col-6 text-end align-self-center>
+                <div class="box" tappable (click)="openCamer()" *ngIf="!userIcon">
+                    <i class="iconfont icon-iconfontshumajiadian camer"></i>
+                </div>
+                <div *ngIf="userIcon" class="ueserIcon" tappable (click)="openCamer()" [style.background-image]="'url(http://imagecdn.lecake.com/postsystem/docroot/images/goods/201212/10800/list_10800.jpg)'">
+
+                </div>
+            </ion-col>
+            <ion-col text-center align-self-center>
+                <ion-row class="login_regist">
+                    <ion-col col-5 (click)="goLogin()">登录</ion-col>
+                    <ion-col col-5 (click)="goRegister()">注册</ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+    </div>
+    <div class="coupon_box">
+        <ion-row>
+            <ion-col col-6 text-center align-self-center style="border-right:1px solid #8B4726">
+                <i class="iconfont icon-youhuijuan"></i><br> 优惠卷
+            </ion-col>
+            <ion-col col-6 text-center align-self-center>
+                <i class="iconfont icon-liwu"></i><br> Leclub
+            </ion-col>
+        </ion-row>
+    </div>
+    <div class="else">
+        <div class="else_top">
+            <ion-row class="else_top_first_row">
+                <ion-col col-6>我的订单</ion-col>
+                <ion-col col-6 text-end>查看订单</ion-col>
+            </ion-row>
+            <ion-row class="else_top_second_row">
+                <ion-col col-4 text-center align-self-center>
+                    <i class="iconfont icon-fukuan"></i><br> 待付款
+                </ion-col>
+                <ion-col col-4 text-center align-self-center>
+                    <i class="iconfont icon-fahuoguanli"></i><br> 待发货
+                </ion-col>
+                <ion-col col-4 text-center align-self-center>
+                    <i class="iconfont icon-shouhuo"></i><br> 待收货
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="list_box">
+            <ion-list>
+                <button ion-item (click)="event-handler()">
+                    <i class="iconfont icon-zhushou fon"></i>
+                    在线客服
+                </button>
+                <button ion-item (click)="event-handler()">
+                    <i class="iconfont icon-shengri fon"></i>
+                    生日助手
+                </button>
+                <button ion-item (click)="event-handler()">
+                    <i class="iconfont icon-address fon"></i>
+                    收货地址管理
+                </button>
+                <button ion-item (click)="event-handler()">
+                    <i class="iconfont icon-fapiao font"></i>
+                    关于发票
+                </button>
+                <button ion-item (click)="event-handler()">
+                    <i class="iconfont icon-yijianfankui fon"></i>
+                    意见与反馈
+                </button>
+                <button ion-item (click)="map()">
+                    <i class="iconfont icon-ditu fon"></i>
+                    生活地图
+                </button>
+                <button ion-item (click)="event-handler()">
+                    <i class="iconfont icon-iconfontshezhi fon"></i>
+                    设置
+                </button>
+                <button ion-item (click)="about()">
+                    <i class="iconfont icon-guanyu fon"></i>
+                    关于
+                </button>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>

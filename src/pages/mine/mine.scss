@@ -1,0 +1,74 @@
+page-mine {
+    .UserIcon-box {
+        padding: 1.5rem;
+        border-bottom: 1px solid #8B4726;
+        .box {
+            display: inline-block;
+            border-radius: 50%;
+            padding: 1rem;
+            border: 2px solid #8B4726;
+            .camer {
+                font-size: 40px !important;
+            }
+        }
+        .ueserIcon {
+            display: inline-block;
+            border-radius: 50%;
+            border: 2px solid #8B4726;
+            width: 80px;
+            height: 80px;
+            background-size: cover;
+        }
+        .login_regist {
+            ion-col {
+                background: #8B4726;
+                margin: .5rem;
+                border-radius: 4px;
+                color: white;
+                border: 1px solid #8B4726;
+            }
+            ion-col:active {
+                background: #85B;
+            }
+        }
+    }
+    .coupon_box {
+        padding: 1rem;
+        border-bottom: 1px solid #8B7D7B;
+        i {
+            font-size: 25px;
+        }
+    }
+    .else_top {
+        ion-row {
+            border-bottom: 1px solid #8B7D7B;
+        }
+        .else_top_first_row {
+            padding: .5rem;
+            ion-col:nth-child(2) {
+                color: #ddd;
+            }
+        }
+        .else_top_second_row {
+            padding: 1rem;
+        }
+        .list_box {
+            ion-list {
+                button {
+                    .item-inner {
+                        .input-wrapper {
+                            .label {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fon {
+        font-size: 21px !important;
+        color: #000 !important;
+    }
+    .font {
+        font-size: 18px !important;
+    }
+}

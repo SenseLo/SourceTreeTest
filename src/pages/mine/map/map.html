@@ -1,0 +1,33 @@
+<!--
+  Generated template for the MapPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <ion-title>Map</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="showIonFab">
+        <ion-fab center bottom>
+            <button ion-fab>去这里</button>
+            <ion-fab-list side="left">
+                <button ion-fab color="danger" (click)="mapNavigation(1)">驾车</button>
+            </ion-fab-list>
+            <ion-fab-list side="right">
+                <button ion-fab color="dark" (click)="mapNavigation(2)"> 公交</button>
+            </ion-fab-list>
+            <ion-fab-list side="top">
+                <button ion-fab color="secondary" (click)="mapNavigation(3)">步行</button>
+            </ion-fab-list>
+        </ion-fab>
+    </div>
+    <div>
+        <ion-icon name="radio-button-on" class="position-btn" tappable (click)="mapLocation()"></ion-icon>
+    </div>
+    <ion-searchbar *ngIf="params.address||params.searchBar" [ngStyle]="{'top':isIos?'16px':''}" (ionFocus)="locationSearch()" [(ngModel)]="params.address" debounce="600" class="search" placeholder="搜索地址"></ion-searchbar>
+    <div #map_container id="map-share" class="map_container"></div>
+</ion-content>

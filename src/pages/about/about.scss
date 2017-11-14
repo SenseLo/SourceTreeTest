@@ -1,0 +1,18 @@
+page-about {
+    .cont {
+        ion-card {
+            background: antiquewhite;
+            img {
+                height: 110px;
+            }
+            ion-card-content {
+                p {
+                    display: block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}

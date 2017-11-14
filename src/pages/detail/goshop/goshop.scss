@@ -1,0 +1,90 @@
+page-goshop {
+    ion-content {
+        .checkbox {
+            .checkbox-icon {
+                border-color: #ddd;
+            }
+        }
+        .checkbox-checked {
+            background-color: red !important;
+        }
+        background: #eee !important;
+        .margin {
+            margin-top: 1rem;
+            background: #fff;
+        }
+        .fo {
+            font-size: 1.5rem;
+        }
+    }
+    .hint {
+        background: #eee;
+        padding: .5rem;
+        font-size: 1.3rem;
+    }
+    .distribution_chose {
+        .chos {
+            .url {
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: .5rem;
+            }
+        }
+        .cake_pai {
+            span {
+                float: right;
+                color: #8A8A8A;
+            }
+        }
+        .chex {
+            float: left;
+        }
+    }
+    .paying {
+        margin-bottom: 5rem;
+        p {
+            font-size: 1.5rem;
+            padding-left: 1rem;
+            img {
+                max-width: 10%;
+                vertical-align: middle;
+                margin-right: 1rem;
+            }
+            ion-checkbox {
+                float: right;
+                margin-right: 1rem;
+            }
+        }
+        .shop_money {
+            margin-left: 1rem;
+            ion-col {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid #ddd;
+        background: #fff;
+        height: 45px;
+        ion-row {
+            height: 100%;
+            ion-col {
+                font-size: 1.6rem;
+                button {
+                    display: inline-block;
+                    height: 40px;
+                    border-radius: 4px;
+                    background: red;
+                    color: #fff;
+                    line-height: 40px;
+                    border: 1px solid red;
+                    width: 80%;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

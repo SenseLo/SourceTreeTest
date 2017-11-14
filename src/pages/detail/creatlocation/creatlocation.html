@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons>
+            <button ion-button (click)="dismiss()">关闭</button>
+        </ion-buttons>
+        <ion-title>收货地址管理</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label>*<span>收货人姓名:</span></ion-label>
+            <ion-input [(ngModel)]="userName"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>*<span>联系方式:</span></ion-label>
+            <ion-input [(ngModel)]="userPhone"></ion-input>
+        </ion-item>
+        <button ion-item>
+            <ion-label>*<span>省、市、区:</span></ion-label>
+            <city-picker item-content [cancelText]="'取消'" [doneText]="'完成'" [separator]="'-'" [citiesData]="cityData" [(ngModel)]="cityName"></city-picker>
+        </button>
+        <ion-item>
+            <ion-label>*<span>详细地址：</span></ion-label>
+            <ion-input [(ngModel)]="detailAdress"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>门牌号</ion-label>
+            <ion-input placeholder="如1栋101号" [(ngModel)]="adressFloor"></ion-input>
+        </ion-item>
+    </ion-list>
+    <div class="footer">
+        <button (click)="Save()">保存</button>
+    </div>
+</ion-content>

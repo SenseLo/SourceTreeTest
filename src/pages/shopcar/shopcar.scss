@@ -1,0 +1,69 @@
+page-shopcar {
+    .checkbox {
+        .checkbox-icon {
+            border-color: red;
+        }
+    }
+    .checkbox-checked {
+        background-color: red !important;
+    }
+    ion-content {
+        background: #F7F7F7 !important;
+    }
+    .shop_row {
+        height: 100px;
+        background: #FFFFFF;
+        margin-bottom: 1rem;
+        .compile {
+            display: inline-block;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            color: black;
+            padding: 3px 10px;
+        }
+    }
+    .account {
+        position: fixed;
+        bottom: 54px;
+        width: 100%;
+        border-top: 1px solid #e0dfe4;
+        .item-block .item-inner {
+            border: none;
+        }
+        ion-item {
+            padding-left: 5px;
+            ion-checkbox {
+                margin: 0 2px 0 0 !important;
+            }
+            ion-label {
+                flex: none;
+                margin: 0;
+            }
+            .a {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+            .sign {
+                right: 10.5rem;
+                font-size: 1.8rem;
+            }
+            .price {
+                right: 6.6rem;
+                color: red;
+            }
+            .setl {
+                right: .5rem;
+                button {
+                    display: inline-block;
+                    padding: .8rem 1.5rem;
+                    background: red;
+                    color: #fff;
+                    border-radius: 8px;
+                    border: 1px solid red;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            蛋糕房
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list *ngFor="let item of list">
+        <div [ngStyle]="{'background': item.color }">
+            <ion-row>
+                <ion-col col-8>
+                    <ion-row class="detail">
+                        <ion-col col-11 text-end>￥{{item.price}}</ion-col>
+                        <ion-col col-12 text-center>{{item.title}}</ion-col>
+                        <ion-col col-12 text-center>{{item.describe}}</ion-col>
+                        <ion-col col-12 text-start>{{item.month}}月</ion-col>
+                        <ion-col col-12 text-start>{{item.description}}</ion-col>
+                    </ion-row>
+                </ion-col>
+                <ion-col col-4 align-self-center>
+                    <img [src]="item.img" alt="">
+                </ion-col>
+            </ion-row>
+        </div>
+    </ion-list>
+</ion-content>

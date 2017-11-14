@@ -1,0 +1,19 @@
+page-creatlocation {
+    .footer {
+        position: fixed;
+        height: 50px;
+        bottom: 0rem;
+        width: 100%;
+        button {
+            display: block;
+            width: 90%;
+            background: red;
+            color: #fff;
+            height: 45px;
+            border-radius: 4px;
+            border: 1px solid red;
+            margin: auto;
+            font-size: 2rem;
+        }
+    }
+}

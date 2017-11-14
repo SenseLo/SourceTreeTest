@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Ionicons";
+    src: url('../assets/tabs/iconfont.eot');
+    /* IE9*/
+    src: url('../assets/tabs/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../assets/tabs/iconfont.woff;') format('woff'), url('../assets/tabs/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../assets/tabs/iconfont.svg#iconfont.eot') format('svg');
+    /* iOS 4.1- */
+}
+
+.ion-ios-zhuye:before {
+    content: "\e74f";
+}
+
+.ion-md-zhuye:before {
+    content: "\e74f";
+}
+
+.ion-ios-zhuye-outline:before {
+    content: "\e600";
+}
+
+.ion-md-zhuye-outline:before {
+    content: "\e600";
+}
+
+.ion-ios-keypa:before {
+    content: "\e74c";
+}
+
+.ion-md-keypa:before {
+    content: "\e74c";
+}
+
+.ion-ios-keypa-outline:before {
+    content: "\e6ab";
+}
+
+.ion-md-keypa-outline:before {
+    content: "\e6ab";
+}
+
+.ion-ios-love:before {
+    content: "\e74e";
+}
+
+.ion-md-love:before {
+    content: "\e74e";
+}
+
+.ion-ios-love-outline:before {
+    content: "\e749";
+}
+
+.ion-md-love-outline:before {
+    content: "\e749";
+}
+
+.ion-ios-gouwuche-outline:before {
+    content: "\e601";
+}
+
+.ion-md-gouwuche-outline:before {
+    content: "\e601";
+}
+
+.ion-ios-gouwuche:before {
+    content: "\e751";
+}
+
+.ion-md-gouwuche:before {
+    content: "\e751";
+}
+
+.ion-ios-map:before {
+    content: "\e74b";
+}
+
+.ion-md-map:before {
+    content: "\e74b";
+}
+
+.ion-ios-map-outline:before {
+    content: "\e636";
+}
+
+.ion-md-map-outline:before {
+    content: "\e636";
+}
+
+.ion-ios-wode:before {
+    content: "\e74a";
+}
+
+.ion-md-wode:before {
+    content: "\e74a";
+}
+
+.ion-ios-wode-outline:before {
+    content: "\e63e";
+}
+
+.ion-md-wode-outline:before {
+    content: "\e63e";
+}
+
+.tabbar {
+    .tab-button {
+        .tab-button-icon {
+            font-size: 26px !important;
+            padding: 1px;
+        }
+    }
+    .tab-button[aria-selected=true] .tab-button-icon {
+        color: red;
+    }
+    .tab-button[aria-selected=true] {
+        color: red;
+    }
+}

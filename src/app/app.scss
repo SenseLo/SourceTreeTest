@@ -1,0 +1,68 @@
+//通用herader
+ion-header {
+    .toolbar {
+        .toolbar-background {
+            background: #fff;
+        }
+        .title {
+            .toolbar-title {
+                font-size: 2.0rem;
+                color: #EE2C2C;
+            }
+        }
+    }
+}
+
+ion-tabs {
+    .tabbar {
+        background: #fff !important;
+    }
+}
+
+//返回键颜色
+.button-inner {
+    color: #000;
+}
+
+//搜索框的图标大小
+.searchbar-search-icon {
+    background-size: 17px !important;
+}
+
+.left {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+.right {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+//分享样式
+.headChoice {
+    .action-sheet-wrapper {
+        .action-sheet-title {
+            color: black;
+        }
+        button {
+            float: left;
+            width: 33%;
+            border: none;
+            height: 130px;
+            font-size: 1.8rem;
+            .button-inner {
+                align-items: flex-end;
+                ion-icon {
+                    position: absolute;
+                    font-size: 2.8em;
+                    transform: translate(10%, -100%)
+                }
+            }
+        }
+    }
+}
